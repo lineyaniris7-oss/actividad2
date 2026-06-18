@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #050505;
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.encabezado {
+    display: flex;
+    background: linear-gradient(90deg, #050505, #1b1b3a, #3a2b7a, #00c2ff);
+}
+
+.lado_izquierdo {
+    width: 40%;
+    height: 130px;
+    display: flex;
+}
+
+.lado_derecho {
+    width: 60%;
+    height: 130px;
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+    height: 130px;
+    padding-right: 12px;
+}
+
+.logo img {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.titulo {
+    width: 100%;
+    height: 130px;
+}
+
+.nombre_empresa {
+    width: 75%;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nombre_empresa img {
+    margin-top: 75px;
+    margin-left: -15px;
+}
+
+.eslogan {
+    width: 100%;
+    height: 60px;
+    text-align: end;
+}
+
+.eslogan h2 {
+    font-size: 14px;
+    opacity: 0.8;
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.navegacion {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #07080c;
+    border-bottom: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+.paginas {
+    width: 70%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 10px;
+    width: 90%;
+    padding: 8px;
+    margin-left: 37px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00c2ff;
+}
+
+.seccion {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #050505 0%, #0b0f1a 40%, #0f1230 70%, #050505 100%);
+}
+
+.formulario {
+    width: 30%;
+    height: 440px;
+    border-radius: 30px;
+    background: rgba(11, 15, 26, 0.65);
+    border: 1px solid rgba(0, 194, 255, 0.15);
+    box-shadow: 0 0 30px rgba(0, 194, 255, 0.2);
+    padding: 20px;
+}
+
+.formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.arriba {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.informacion {
+    width: 85%;
+    height: auto;
+}
+
+.informacion label {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.informacion label p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(0, 194, 255, 0.2);
+}
+
+.informacion input {
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 194, 255, 0.3);
+    background-color: rgba(5, 5, 5, 0.8);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.informacion input:focus {
+    border-color: #00c2ff;
+    box-shadow: 0 0 10px rgba(0, 194, 255, 0.3);
+}
+
+.informacion input::placeholder {
+    color: #555861;
+    font-size: 13px;
+}
+
+.abajo {
+    width: 85%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.abajo button {
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #00c2ff;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.abajo button:hover {
+    background: linear-gradient(90deg, #3a2b7a, #00c2ff);
+    box-shadow: 0 0 15px rgba(0, 194, 255, 0.4);
+    border-color: transparent;
+}
+
+.abajo button:active {
+    transform: scale(0.98);
+}
+
+.abajo button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #040508;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 194, 255, 0.15);
+}
+
+footer .enlaces {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+footer .lado1 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lado2 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+footer .contacto {
+    width: 60%;
+    height: 150px;
+}
+
+footer .correo, footer .telefono {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer .correo p, footer .telefono p {
+    color: #b0b5c6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .redes_sociales {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.fa-facebook, .fa-instagram, .fa-x-twitter, .fa-whatsapp {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.fa-facebook:hover { color: #1877f2; transform: scale(1.1); }
+.fa-instagram:hover { color: #e1306c; transform: scale(1.1); }
+.fa-x-twitter:hover { color: #aaa; transform: scale(1.1); }
+.fa-whatsapp:hover { color: #25d366; transform: scale(1.1); }
+
+footer .mapa {
+    width: 70%;
+    height: 200px;
+    margin-left: 50px;
+}
+
+footer .mapa .mapatext {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer .mapa .mapatext p {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+footer .mapa .mapaenla {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+footer .mapa .mapaenla iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.derechos {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #020203;
+}
+
+.derechosautor {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechosautor p {
+    color: #555861;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/* ===== MEDIA QUERIES RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo, .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    .eslogan {
+        text-align: center;
+        height: auto;
+    }
+
+    .eslogan h2 {
+        text-align: center;
+    }
+
+    .nombre_empresa img {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .formulario {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .formulario {
+        width: 80%;
+        height: auto;
+        padding: 25px 20px;
+    }
+
+    .arriba {
+        height: auto;
+        margin-top: 5px;
+    }
+
+    footer .enlaces {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        padding: 20px;
+    }
+
+    footer .lado1, footer .lado2 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    footer .contacto {
+        width: 80%;
+        height: auto;
+    }
+
+    footer .mapa {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .lado_izquierdo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .nombre_empresa {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nombre_empresa img {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 6px;
+    }
+
+    nav li {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .formulario {
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    footer .contacto, footer .mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    footer .redes_sociales {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+
+/* ===== MENÚ HAMBURGUESA (puro CSS) ===== */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 200;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #00c2ff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animación X al abrir */
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .navegacion {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        min-height: 60px;
+        padding: 0 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .paginas {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #07080c;
+        border-bottom: 1px solid rgba(0, 194, 255, 0.2);
+        z-index: 150;
+        padding: 10px 0;
+    }
+
+    .menu-toggle:checked ~ .paginas {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(0, 194, 255, 0.08);
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 12px 0;
+    }
+
+    /* El encabezado también se compacta */
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 15px;
+        flex-direction: row;
+    }
+
+    .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 5px 15px 15px;
+    }
+
+    .eslogan {
+        text-align: center;
+        height: auto;
+    }
+
+    .eslogan h2 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .nombre_empresa {
+        width: auto;
+        align-items: center;
+    }
+
+    .nombre_empresa img {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    .logo {
+        width: auto;
+    }
+}

@@ -1,0 +1,322 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #050505;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .seccion {
+            width: 100%;
+            min-height: 100vh;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #050505 0%, #0b0f1a 40%, #0f1230 70%, #050505 100%);
+            padding: 60px 20px;
+        }
+
+        .formulario {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 40px;
+            background: rgba(11, 15, 26, 0.8);
+            border: 1px solid rgba(0, 194, 255, 0.25);
+            box-shadow: 0 0 35px rgba(0, 194, 255, 0.3);
+            padding: 40px 30px;
+        }
+
+        .titulo {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo h2 {
+            font-size: 42px;
+            color: white;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(0, 194, 255, 0.6);
+            text-align: center;
+        }
+
+        .abajo1 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .informacion {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .informacion label {
+            text-align: left;
+            font-size: 14px;
+            color: white;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .informacion label p {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .informacion input {
+            width: 100%;
+            height: 42px;
+            margin-left: 0;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 194, 255, 0.4);
+            background-color: rgba(5, 5, 5, 0.9);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: left;
+            padding: 0 15px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .informacion input:focus {
+            border-color: #00c2ff;
+            box-shadow: 0 0 12px rgba(0, 194, 255, 0.5);
+        }
+
+        .informacion input::placeholder {
+            color: #555861;
+            font-size: 13px;
+        }
+
+        .abajo2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .abajo2 button {
+            width: 100%;
+            height: 46px;
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            border: 1px solid #00c2ff;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .abajo2 button:hover {
+            background: linear-gradient(90deg, #3a2b7a, #00c2ff);
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+            border-color: transparent;
+        }
+
+        .abajo2 button:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            width: 100%;
+            height: auto;
+            background-color: #040508;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            border-top: 1px solid rgba(0, 194, 255, 0.15);
+            padding: 40px 0 0 0;
+        }
+
+        footer .enlaces {
+            width: 100%;
+            height: auto;
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        footer .lado1 {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer .lado2 {
+            width: 50%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .contacto {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        footer .correo, footer .telefono {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer .correo p, footer .telefono p {
+            color: #b0b5c6;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        footer .redes_sociales {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .fa-facebook, .fa-instagram, .fa-x-twitter, .fa-whatsapp {
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .fa-facebook:hover { color: #1877f2; transform: scale(1.1); }
+        .fa-instagram:hover { color: #e1306c; transform: scale(1.1); }
+        .fa-x-twitter:hover { color: #aaa; transform: scale(1.1); }
+        .fa-whatsapp:hover { color: #25d366; transform: scale(1.1); }
+
+        footer .mapa {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        footer .mapa .mapatext {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer .mapa .mapatext p {
+            font-size: 16px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        footer .mapa .mapaenla {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        footer .mapa .mapaenla iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .derechos {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            background-color: #020203;
+            margin-top: 40px;
+        }
+
+        .derechosautor {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .derechosautor p {
+            color: #555861;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        @media (max-width: 850px) {
+            footer .enlaces {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            footer .lado1, footer .lado2 {
+                width: 100%;
+            }
+
+            footer .lado2 {
+                justify-content: flex-start;
+            }
+        }
+
+        @media (max-width: 580px) {
+            .seccion {
+                padding: 40px 15px;
+            }
+
+            .formulario {
+                padding: 30px 20px;
+                border-radius: 25px;
+            }
+
+            .titulo h2 {
+                font-size: 32px;
+            }
+
+            footer .lado2 {
+                justify-content: center;
+            }
+
+            footer .contacto, footer .mapa {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            footer .redes_sociales {
+                justify-content: center;
+                gap: 30px;
+            }
+        }
