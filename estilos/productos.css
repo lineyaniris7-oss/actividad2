@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.encabezado {
+    display: flex;
+    background: linear-gradient(90deg, #050505, #1b1b3a, #3a2b7a, #00c2ff);
+}
+
+.lado_izquierdo {
+    width: 40%;
+    height: 130px;
+    display: flex;
+}
+
+.lado_derecho {
+    width: 60%;
+    height: 130px;
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+    height: 130px;
+    padding-right: 12px;
+}
+
+.logo img {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.titulo {
+    width: 100%;
+    height: 130px;
+}
+
+.nombre_empresa {
+    width: 75%;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nombre_empresa img {
+    margin-top: 75px;
+    margin-left: -15px;
+}
+
+.eslogan {
+    width: 100%;
+    height: 60px;
+    text-align: end;
+}
+
+.eslogan h2 {
+    font-size: 14px;
+    opacity: 0.8;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navegacion {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #07080c;
+    border-bottom: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+.paginas {
+    width: 70%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 10px;
+    width: 90%;
+    padding: 8px;
+    margin-left: 37px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00c2ff;
+}
+
+.seccion {
+    width: 100%;
+    min-height: 1700px;
+    background: linear-gradient(180deg, #050505 0%, #0b0f1a 30%, #0f1230 70%, #050505 100%);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 60px;
+}
+
+.seccion .productosdes {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .productosdes table {
+    width: 50%;
+    height: 1000px;
+    border-collapse: collapse;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background-color: rgba(11, 15, 26, 0.6);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 194, 255, 0.1);
+    border: 1px solid rgba(0, 194, 255, 0.15);
+}
+
+.seccion .productosdes th, .seccion .productosdes td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 194, 255, 0.15);
+}
+
+.seccion .productosdes th {
+    background-color: #050505;
+    color: #00c2ff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.seccion .productosdes tr:nth-child(even) {
+    background-color: rgba(15, 18, 48, 0.4);
+}
+
+.seccion .productosdes tr:hover {
+    background-color: rgba(0, 194, 255, 0.08);
+    transition: background-color 0.3s ease;
+}
+
+.seccion .productosdes .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion .productosdes img {
+    width: auto;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0, 194, 255, 0.4));
+}
+
+.seccion .titulo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .titulo h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 194, 255, 0.4);
+    letter-spacing: 2px;
+}
+
+.seccion .imagenes {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion .imagenes img {
+    width: auto;
+    height: 75px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.seccion .imagenes .portatiles, .seccion .imagenes .impresoras, .seccion .imagenes .accesorios, .seccion .imagenes .mesa, .seccion .imagenes .sonido, .seccion .imagenes .celulares {
+    width: 140px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(0, 194, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.seccion .imagenes .portatiles:hover, .seccion .imagenes .impresoras:hover, .seccion .imagenes .accesorios:hover, .seccion .imagenes .mesa:hover, .seccion .imagenes .sonido:hover, .seccion .imagenes .celulares:hover {
+    border-color: #00c2ff;
+    box-shadow: 0 0 25px rgba(0, 194, 255, 0.4);
+    transform: scale(1.08);
+}
+
+.seccion .imagenes .portatiles:hover img, .seccion .imagenes .impresoras:hover img, .seccion .imagenes .accesorios:hover img, .seccion .imagenes .mesa:hover img, .seccion .imagenes .sonido:hover img, .seccion .imagenes .celulares:hover img {
+    transform: scale(1.05);
+}
+
+.seccion .botones {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion .botones button {
+    width: 140px;
+    height: 35px;
+    border: none;
+    background: #00c2ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 194, 255, 0.2);
+}
+
+.seccion .botones button:hover {
+    background: #008ebc;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 194, 255, 0.4);
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #040508;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 194, 255, 0.15);
+}
+
+footer .enlaces {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+footer .lado1 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lado2 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+footer .contacto {
+    width: 60%;
+    height: 150px;
+}
+
+footer .correo, footer .telefono {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer .correo p, footer .telefono p {
+    color: #b0b5c6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .redes_sociales {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.fa-facebook, .fa-instagram, .fa-x-twitter, .fa-whatsapp {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.fa-facebook:hover { color: #1877f2; transform: scale(1.1); }
+.fa-instagram:hover { color: #e1306c; transform: scale(1.1); }
+.fa-x-twitter:hover { color: #aaa; transform: scale(1.1); }
+.fa-whatsapp:hover { color: #25d366; transform: scale(1.1); }
+
+footer .mapa {
+    width: 70%;
+    height: 200px;
+    margin-left: 50px;
+}
+
+footer .mapa .mapatext {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer .mapa .mapatext p {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+footer .mapa .mapaenla {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+footer .mapa .mapaenla iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.derechos {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #020203;
+}
+
+.derechosautor {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechosautor p {
+    color: #555861;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/* ===== MEDIA QUERIES RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo, .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    .eslogan {
+        text-align: center;
+        height: auto;
+    }
+
+    .eslogan h2 {
+        text-align: center;
+    }
+
+    .nombre_empresa img {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    nav li {
+        width: auto;
+        min-width: 100px;
+    }
+
+    .seccion {
+        min-height: auto;
+    }
+
+    .seccion .productosdes {
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .seccion .productosdes table {
+        width: 85%;
+        height: auto;
+    }
+
+    .seccion .imagenes .portatiles,
+    .seccion .imagenes .impresoras,
+    .seccion .imagenes .accesorios,
+    .seccion .imagenes .mesa,
+    .seccion .imagenes .sonido,
+    .seccion .imagenes .celulares {
+        width: 100px;
+        height: 100px;
+    }
+
+    .seccion .imagenes img {
+        height: 55px;
+    }
+
+    .seccion .botones button {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion .productosdes table {
+        width: 95%;
+    }
+
+    .seccion .titulo h2 {
+        font-size: 32px;
+    }
+
+    .seccion .imagenes {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .seccion .imagenes .portatiles,
+    .seccion .imagenes .impresoras,
+    .seccion .imagenes .accesorios,
+    .seccion .imagenes .mesa,
+    .seccion .imagenes .sonido,
+    .seccion .imagenes .celulares {
+        width: 110px;
+        height: 110px;
+    }
+
+    .seccion .botones {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .seccion .botones button {
+        width: 110px;
+    }
+
+    footer .enlaces {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    footer .lado1, footer .lado2 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    footer .contacto {
+        width: 80%;
+        height: auto;
+    }
+
+    footer .mapa {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .lado_izquierdo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo { width: auto; }
+
+    .nombre_empresa {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nombre_empresa img {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav li { width: 100%; }
+
+    .seccion .titulo h2 {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    .seccion .productosdes th,
+    .seccion .productosdes td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .seccion .productosdes img {
+        height: 55px;
+    }
+
+    .seccion .imagenes .portatiles,
+    .seccion .imagenes .impresoras,
+    .seccion .imagenes .accesorios,
+    .seccion .imagenes .mesa,
+    .seccion .imagenes .sonido,
+    .seccion .imagenes .celulares {
+        width: 90px;
+        height: 90px;
+    }
+
+    .seccion .imagenes img {
+        height: 48px;
+    }
+
+    .seccion .botones button {
+        width: 90px;
+        font-size: 11px;
+    }
+
+    footer .contacto, footer .mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    footer .redes_sociales {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+
+/* ===== MENÚ HAMBURGUESA (puro CSS) ===== */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 200;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #00c2ff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animación X al abrir */
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .navegacion {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        min-height: 60px;
+        padding: 0 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .paginas {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #07080c;
+        border-bottom: 1px solid rgba(0, 194, 255, 0.2);
+        z-index: 150;
+        padding: 10px 0;
+    }
+
+    .menu-toggle:checked ~ .paginas {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(0, 194, 255, 0.08);
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 12px 0;
+    }
+
+    /* El encabezado también se compacta */
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 15px;
+        flex-direction: row;
+    }
+
+    .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 5px 15px 15px;
+    }
+
+    .eslogan {
+        text-align: center;
+        height: auto;
+    }
+
+    .eslogan h2 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .nombre_empresa {
+        width: auto;
+        align-items: center;
+    }
+
+    .nombre_empresa img {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    .logo {
+        width: auto;
+    }
+}

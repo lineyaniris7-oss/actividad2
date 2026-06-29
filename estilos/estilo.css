@@ -1,0 +1,841 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #050505;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.encabezado {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(90deg, #050505, #1b1b3a, #3a2b7a, #00c2ff);
+}
+
+.lado_izquierdo {
+    width: 40%;
+    height: 130px;
+    display: flex;
+}
+
+.lado_derecho {
+    width: 60%;
+    height: 130px;
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+    height: 130px;
+    padding-right: 12px;
+}
+
+.logo img {
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    width: 100%;
+    height: 130px;
+}
+
+.nombre_empresa {
+    width: 75%;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nombre_empresa img {
+    margin-top: 75px;
+    margin-left: -15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.eslogan {
+    width: 100%;
+    height: 60px;
+    text-align: end;
+}
+
+.eslogan h2 {
+    font-size: 16px;
+    opacity: 0.8;
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.navegacion {
+    height: auto;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #07080c;
+    border-bottom: 1px solid rgba(0, 194, 255, 0.2);
+    padding: 10px 0;
+}
+
+.paginas {
+    width: 70%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: auto;
+    min-width: 120px;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00c2ff;
+}
+
+.contenido {
+    width: 100%;
+    min-height: 1000px;
+    height: auto;
+    background: linear-gradient(180deg, #050505 0%, #0b0f1a 40%, #0f1230 70%, #050505 100%);
+    padding-bottom: 50px;
+    padding-top: 1px;
+}
+
+.bienvenida {
+    width: 80%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    border-radius: 50px;
+    background: rgba(11, 15, 26, 0.6);
+    border: 1px solid rgba(0, 194, 255, 0.15);
+    box-shadow: 0 0 30px rgba(0, 194, 255, 0.15);
+    padding: 20px;
+}
+
+.contenedoruno {
+    width: 50%;
+    height: auto;
+}
+
+.contenedoruno .titulouno {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    height: 100px;
+    margin-top: 19px;
+}
+
+.contenedoruno .titulouno h2 {
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 194, 255, 0.4);
+}
+
+.parte_abajo {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedoruno .parrafo {
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    align-items: flex-start;
+    display: flex;
+}
+
+.contenedoruno .parrafo p {
+    margin: 25px 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    color: #b0b5c6;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.contenedordos {
+    overflow: hidden;
+    width: 50%;
+    height: auto;
+    min-height: 400px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.video {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 194, 255, 0.3);
+}
+
+.contenido .cartas {
+    width: 85%;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+
+.contenido .cartas .carta1, .contenido .cartas .carta2, .contenido .cartas .carta3 {
+    width: 28%;
+    min-width: 250px;
+    height: 330px;
+    border-radius: 40px;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+
+.contenido .cartas .voltear {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.9s ease;
+    transform-style: preserve-3d;
+}
+
+.contenido .cartas .carta1:hover .voltear,
+.contenido .cartas .carta2:hover .voltear,
+.contenido .cartas .carta3:hover .voltear {
+    transform: rotateY(180deg);
+}
+
+.contenido .cartas .carta1:hover,
+.contenido .cartas .carta2:hover,
+.contenido .cartas .carta3:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.contenido .cartas .frente,
+.contenido .cartas .atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    backface-visibility: hidden;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 25px rgba(3, 149, 194, 0.25);
+}
+
+.contenido .cartas .frente {
+    background: rgba(11, 15, 26, 0.7);
+    border: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+.contenido .cartas .atras {
+    background: linear-gradient(135deg, #00c2ff, #3a2b7a);
+    transform: rotateY(180deg);
+}
+
+.contenido .cartas .carta1 .marco1, 
+.contenido .cartas .carta2 .marco1, 
+.contenido .cartas .carta3 .marco {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido .cartas .parte_arriba {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.contenido .cartas .texto {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenido .cartas .titulo_frente {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #040508;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 194, 255, 0.15);
+    padding: 40px 0 0 0;
+}
+
+footer .enlaces {
+    width: 100%;
+    height: auto;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .lado1 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lado2 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contacto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+footer .correo, footer .telefono {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+footer .correo p, footer .telefono p {
+    color: #b0b5c6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .redes_sociales {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.fa-facebook, .fa-instagram, .fa-x-twitter, .fa-whatsapp {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.fa-facebook:hover { color: #1877f2; transform: scale(1.1); }
+.fa-instagram:hover { color: #e1306c; transform: scale(1.1); }
+.fa-x-twitter:hover { color: #aaa; transform: scale(1.1); }
+.fa-whatsapp:hover { color: #25d366; transform: scale(1.1); }
+
+footer .mapa {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+footer .mapa .mapatext {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+footer .mapa .mapatext p {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+footer .mapa .mapaenla {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+footer .mapa .mapaenla iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.derechos {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #020203;
+    margin-top: 40px;
+}
+
+.derechosautor {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechosautor p {
+    color: #555861;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* ===========================================================
+   MEDIA QUERIES RESPONSIVE
+   (Se mantiene el diseño original; solo se ajustan tamaños,
+   distribución y proporciones para distintas pantallas)
+   =========================================================== */
+
+/* Tablets grandes / pantallas medianas */
+@media (max-width: 992px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo, .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .nombre_empresa img {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .eslogan {
+        text-align: center;
+        height: auto;
+    }
+
+    .eslogan h2 {
+        text-align: center;
+    }
+
+    .bienvenida {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .contenedoruno, .contenedordos {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .contenedordos {
+        padding-bottom: 40px;
+    }
+
+    .contenido .cartas {
+        width: 90%;
+    }
+
+    .contenido .cartas .carta1,
+    .contenido .cartas .carta2,
+    .contenido .cartas .carta3 {
+        width: 45%;
+    }
+}
+
+/* Tablets pequeñas */
+@media (max-width: 850px) {
+    footer .enlaces {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    footer .lado1, footer .lado2 {
+        width: 100%;
+    }
+
+    footer .lado2 {
+        justify-content: center;
+    }
+
+    footer .mapa {
+        margin-left: 0;
+    }
+
+    .contenido .cartas .carta1,
+    .contenido .cartas .carta2,
+    .contenido .cartas .carta3 {
+        width: 70%;
+        min-width: 220px;
+    }
+}
+
+/* Móviles grandes / phablets */
+@media (max-width: 600px) {
+    .paginas {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 8px;
+    }
+
+    nav li {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .lado_izquierdo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nombre_empresa {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nombre_empresa img {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .contenedoruno .titulouno {
+        font-size: 26px;
+        height: 70px;
+    }
+
+    .contenedoruno .parrafo {
+        width: 100%;
+    }
+
+    .contenedoruno .parrafo p {
+        font-size: 16px;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .contenido .cartas .carta1,
+    .contenido .cartas .carta2,
+    .contenido .cartas .carta3 {
+        width: 90%;
+        min-width: 0;
+    }
+
+    footer .contacto, footer .mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .redes_sociales {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+/* Móviles pequeños (iPhone SE y similares) */
+@media (max-width: 400px) {
+    .eslogan h2 {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contenedoruno .titulouno {
+        font-size: 22px;
+        height: 60px;
+    }
+
+    .contenido .cartas .parte_arriba {
+        font-size: 38px;
+    }
+
+    .contenido .cartas .texto {
+        font-size: 18px;
+    }
+
+    .contenido .cartas .titulo_frente {
+        font-size: 20px;
+    }
+
+    footer .mapa .mapaenla {
+        height: 130px;
+    }
+
+    .bienvenida {
+        width: 95%;
+        padding: 15px;
+        border-radius: 30px;
+    }
+}
+/* ===== MEDIA QUERIES ADICIONALES (header/nav) ===== */
+
+@media (max-width: 992px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo, .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    .eslogan { text-align: center; height: auto; }
+    .eslogan h2 { text-align: center; }
+    .nombre_empresa img { margin-top: 20px; margin-left: 0; }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    nav li { width: auto; min-width: 100px; }
+}
+
+
+/* ===== MENÚ HAMBURGUESA (puro CSS) ===== */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 200;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #00c2ff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animación X al abrir */
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .navegacion {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        min-height: 60px;
+        padding: 0 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .paginas {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #07080c;
+        border-bottom: 1px solid rgba(0, 194, 255, 0.2);
+        z-index: 150;
+        padding: 10px 0;
+    }
+
+    .menu-toggle:checked ~ .paginas {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(0, 194, 255, 0.08);
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 12px 0;
+    }
+
+    /* El encabezado también se compacta */
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lado_izquierdo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 15px;
+        flex-direction: row;
+    }
+
+    .lado_derecho {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 5px 15px 15px;
+    }
+
+    .eslogan {
+        text-align: center;
+        height: auto;
+    }
+
+    .eslogan h2 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .nombre_empresa {
+        width: auto;
+        align-items: center;
+    }
+
+    .nombre_empresa img {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    .logo {
+        width: auto;
+    }
+}
